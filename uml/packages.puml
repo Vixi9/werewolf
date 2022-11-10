@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package server
+
+package client {
+    package Cmodel
+}
+
+package shared {
+    package model
+}
+
+@enduml

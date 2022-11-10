@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class GameEngine
+
+interface GameStrategy {
+    +gameLoop()
+}
+
+class ClassicStrategy
+
+GameEngine o--> GameStrategy : strategy
+
+GameStrategy <|.. ClassicStrategy
+
+interface Object
+
+class Character
+
+class Chest
+
+GameEngine o--> Object: objects
+
+Object <|.. Character
+Object <|.. Chest
+
+@enduml
